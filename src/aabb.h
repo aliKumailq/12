@@ -5,6 +5,7 @@
 #include <limits>
 #include <type_traits>
 
+#include <SFML/Graphics/Color.hpp>
 #include <SFML/System/Vector2.hpp>
 
 template <typename T>
@@ -80,6 +81,7 @@ struct AABB {
                                std::numeric_limits<T>::infinity()};
     sf::Vector2<T> maxPoint = {-std::numeric_limits<T>::infinity(),
                                -std::numeric_limits<T>::infinity()};
+
 };
 
 #endif  // AABB_H

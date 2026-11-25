@@ -1,5 +1,8 @@
 ﻿Q3. What happens to the bounding boxes with update + fullRefit?
+- The get bigger as the two objects get further away.
 
 Q4. What happens with reset (rebuild every frame) instead?
-
+- The shared overlapping bounding boxes for each pair of objects changes as they move away and closer to each other.
+- No same two objects are stuck in the same bounding box.
 Q5. Why are some circles drawn with their sides cut off?
+- Because they are clipping outside the fixed screen space. 
